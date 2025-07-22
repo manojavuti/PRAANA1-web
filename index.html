@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PRAANA - Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>PRAANA - Air & Fire Monitoring</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>PRAANA - Air & Fire Monitoring</h1>
     <nav>
-      <a href="index.html">Dashboard</a>
-      <a href="satellite.html">Satellite Data</a>
-      <a href="settings.html">Settings</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Satellite</a>
+      <a href="#">Settings</a>
     </nav>
   </header>
+
   <main>
-    <div id="aqiContainer">
+    <section class="card">
       <h2 id="location">Fetching Location...</h2>
-      <p id="aqi">AQI: Loading...</p>
-      <p id="healthTips">Health Tips: --</p>
-    </div>
+      <p id="aqi">AQI (PM2.5): Loading...</p>
+      <p id="health">Health Tips: --</p>
+      <p id="fire-alerts">Fire Alerts: Fetching...</p>
+    </section>
   </main>
-  <footer><p>Powered by PRAANA | 100% Free & Offline Ready</p></footer>
-  <script src="js/api.js"></script>
-  <script src="js/i18n.js"></script>
-  <script>initDashboard();</script>
+
+  <footer>
+    <p>Powered by PRAANA | 100% Free & Real-Time</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
