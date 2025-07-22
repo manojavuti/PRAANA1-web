@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - PRAANA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Settings</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="satellite.html">Satellite Data</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+  <main>
+    <label for="language">Choose Language:</label>
+    <select id="language" onchange="setLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+      <option value="te">తెలుగు</option>
+    </select>
+  </main>
+  <footer><p>PRAANA | Multilingual Support</p></footer>
+  <script src="js/i18n.js"></script>
+</body>
+</html>
